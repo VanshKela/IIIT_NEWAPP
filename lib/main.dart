@@ -45,6 +45,7 @@ void main() {
   Map<int, Widget> op = {1: second(), 2: second()};
 
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: CustomSplash(
       imagePath: 'images/Login_Page/IIIT Sonepat Logo.png',
       backGroundColor: Colors.white,

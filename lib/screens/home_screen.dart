@@ -8,6 +8,7 @@ import 'package:iiit_skeleton/screens/Socials.dart';
 import 'package:iiit_skeleton/screens/attendance_page.dart';
 import 'package:iiit_skeleton/screens/meet.dart';
 import 'package:iiit_skeleton/screens/news.dart';
+import 'package:iiit_skeleton/subjects/maths_screen.dart';
 import 'package:iiit_skeleton/widgets/subjectIcon.dart';
 import 'about_page.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -437,6 +438,9 @@ class MyApp extends StatelessWidget {
                   mainAxisSpacing: 10,
                   children: <Widget>[
                     Subject(
+                      onPress: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>MathsSubjectPage()));
+                      },
                       address: 'images/m.png',
                       subjectName: 'Mathematics',
                     ),
